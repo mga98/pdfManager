@@ -1,4 +1,5 @@
 from PyQt5.QtWidgets import QMainWindow, QApplication
+from convertWord import WordWindow
 from designs.designMenu import Ui_designMenu
 from converterUi import *
 from juntarUi import *
@@ -13,6 +14,7 @@ class MenuWindow(QMainWindow, Ui_designMenu):
         ### Botões da interface ###
         self.btnJuntarPdf.clicked.connect(self.juntarPdf)
         self.btnImgToPdf.clicked.connect(self.converterPdf)
+        # self.btnWordToPdf.clicked.connect(self.pdfToWord)
 
     ### Abre a janela para juntar arquivos PDF's ###
     def juntarPdf(self):
@@ -23,6 +25,10 @@ class MenuWindow(QMainWindow, Ui_designMenu):
     def converterPdf(self):
         self.converter = ConverterWindow()
         self.converter.show()
+
+    def pdfToWord(self):
+        self.word = WordWindow()
+        self.word.show()
 
 
 ### Inicializador do sistema ###
