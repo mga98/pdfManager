@@ -37,6 +37,7 @@ class ConverterWindow(QMainWindow, Ui_designConverter):
     def clearList(self):
         self.dirList.clear()
         self.listArquivos.clear()
+        self.label_2.setText('')
 
     # Deleta o item selecionado na interface das listas:
     def deleteSelectedItem(self):

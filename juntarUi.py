@@ -37,6 +37,7 @@ class JuntarWindow(QMainWindow, Ui_designJuntar):
     def clearList(self):
         self.directoryList.clear()
         self.listDir.clear()
+        self.label_2.setText('')
 
     # Deletando um diretório selecionado da lsita:
     def deleteSelectedItem(self):
