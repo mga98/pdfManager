@@ -15,7 +15,7 @@ class Ui_designConverter(object):
     def setupUi(self, designConverter):
         designConverter.setObjectName("designConverter")
         designConverter.resize(541, 361)
-        designConverter.setStyleSheet("background-color: rgb(58, 58, 58);")
+        designConverter.setStyleSheet("background-color: qlineargradient(spread:repeat, x1:0.456, y1:0.365, x2:0.596, y2:0.465, stop:0.998342 rgba(23, 23, 23, 255), stop:1 rgba(255, 255, 255, 255));")
         self.btnArquivo = QtWidgets.QPushButton(designConverter)
         self.btnArquivo.setGeometry(QtCore.QRect(400, 80, 131, 31))
         font = QtGui.QFont()
@@ -25,7 +25,7 @@ class Ui_designConverter(object):
         self.btnArquivo.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btnArquivo.setWhatsThis("")
         self.btnArquivo.setAccessibleDescription("")
-        self.btnArquivo.setStyleSheet("background-color: rgba(147, 6, 133, 0.7);\n"
+        self.btnArquivo.setStyleSheet("background-color: rgba(147, 6, 133, 0.6);\n"
 "color: rgb(255, 255, 255);")
         self.btnArquivo.setObjectName("btnArquivo")
         self.label = QtWidgets.QLabel(designConverter)
@@ -33,7 +33,7 @@ class Ui_designConverter(object):
         font = QtGui.QFont()
         font.setStyleStrategy(QtGui.QFont.PreferAntialias)
         self.label.setFont(font)
-        self.label.setStyleSheet("background-color: rgba(147, 6, 133, 0.7);")
+        self.label.setStyleSheet("background-color: rgba(147, 6, 133, 0.6);")
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         self.btnConverter = QtWidgets.QPushButton(designConverter)
@@ -48,7 +48,7 @@ class Ui_designConverter(object):
         font.setStyleStrategy(QtGui.QFont.PreferAntialias)
         self.btnConverter.setFont(font)
         self.btnConverter.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.btnConverter.setStyleSheet("background-color: rgba(147, 6, 133, 0.7);\n"
+        self.btnConverter.setStyleSheet("background-color: rgba(147, 6, 133, 0.6);\n"
 "color: rgb(255, 255, 255);")
         self.btnConverter.setObjectName("btnConverter")
         self.btnClear = QtWidgets.QPushButton(designConverter)
@@ -57,15 +57,21 @@ class Ui_designConverter(object):
         font.setPointSize(9)
         self.btnClear.setFont(font)
         self.btnClear.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.btnClear.setStyleSheet("background-color: rgba(147, 6, 133, 0.7);\n"
+        self.btnClear.setStyleSheet("background-color: rgba(147, 6, 133, 0.6);\n"
 "color: rgb(255, 255, 255);")
         self.btnClear.setObjectName("btnClear")
         self.label_2 = QtWidgets.QLabel(designConverter)
-        self.label_2.setGeometry(QtCore.QRect(20, 320, 361, 31))
+        self.label_2.setGeometry(QtCore.QRect(10, 320, 381, 31))
         font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
         font.setPointSize(10)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(9)
         self.label_2.setFont(font)
-        self.label_2.setStyleSheet("color: rgb(255, 255, 255);")
+        self.label_2.setStyleSheet("background-color: rgb(0, 0, 0);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 75 10pt \"MS Shell Dlg 2\";")
         self.label_2.setText("")
         self.label_2.setObjectName("label_2")
         self.btnDeletar = QtWidgets.QPushButton(designConverter)
@@ -75,12 +81,12 @@ class Ui_designConverter(object):
         font.setStyleStrategy(QtGui.QFont.PreferAntialias)
         self.btnDeletar.setFont(font)
         self.btnDeletar.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.btnDeletar.setStyleSheet("background-color: rgba(147, 6, 133, 0.7);\n"
+        self.btnDeletar.setStyleSheet("background-color: rgba(147, 6, 133, 0.6);\n"
 "color: rgb(255, 255, 255);")
         self.btnDeletar.setObjectName("btnDeletar")
         self.listArquivos = QtWidgets.QListWidget(designConverter)
         self.listArquivos.setGeometry(QtCore.QRect(10, 80, 381, 231))
-        self.listArquivos.setStyleSheet("background-color: rgba(0, 0, 0, 0.5);\n"
+        self.listArquivos.setStyleSheet("background-color: rgb(0, 0, 0);\n"
 "color: rgb(255, 255, 255);")
         self.listArquivos.setObjectName("listArquivos")
 
@@ -89,7 +95,7 @@ class Ui_designConverter(object):
 
     def retranslateUi(self, designConverter):
         _translate = QtCore.QCoreApplication.translate
-        designConverter.setWindowTitle(_translate("designConverter", "Form"))
+        designConverter.setWindowTitle(_translate("designConverter", "ImgToPDF"))
         self.btnArquivo.setText(_translate("designConverter", "Adicionar img"))
         self.label.setText(_translate("designConverter", "<html><head/><body><p><span style=\" font-size:16pt; color:#ffffff;\">ImgToPDF</span></p></body></html>"))
         self.btnConverter.setText(_translate("designConverter", "Converter"))

@@ -11,10 +11,10 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>JuntarPDF</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(58, 58, 58);</string>
+   <string notr="true">background-color: qlineargradient(spread:repeat, x1:0.456, y1:0.365, x2:0.596, y2:0.465, stop:0.998342 rgba(23, 23, 23, 255), stop:1 rgba(255, 255, 255, 255));</string>
   </property>
   <widget class="QPushButton" name="btnJuntar">
    <property name="geometry">
@@ -37,9 +37,8 @@
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 0, 0, 0.7);
-color: rgb(255, 255, 255);
-</string>
+    <string notr="true">background-color: rgba(255, 0, 0, 0.6);
+color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>Juntar</string>
@@ -55,21 +54,22 @@ color: rgb(255, 255, 255);
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(0, 0, 0, 0.5);
+    <string notr="true">background-color: rgb(0, 0, 0);
 color: rgb(255, 255, 255);</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>10</x>
      <y>320</y>
-     <width>371</width>
+     <width>381</width>
      <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);
+    <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
 font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
    </property>
    <property name="text">
@@ -94,7 +94,7 @@ font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 0, 0, 0.7);
+    <string notr="true">background-color: rgba(255, 0, 0, 0.6);
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -114,7 +114,7 @@ color: rgb(255, 255, 255);</string>
     <bool>true</bool>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 0, 0, 0.7);</string>
+    <string notr="true">background-color: rgba(255, 0, 0, 0.6);</string>
    </property>
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;JuntarPDF &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -148,7 +148,7 @@ color: rgb(255, 255, 255);</string>
     <bool>false</bool>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 0, 0, 0.7);
+    <string notr="true">background-color: rgba(255, 0, 0, 0.6);
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -176,7 +176,7 @@ color: rgb(255, 255, 255);</string>
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 0, 0, 0.7);
+    <string notr="true">background-color: rgba(255, 0, 0, 0.6);
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">

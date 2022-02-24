@@ -17,7 +17,7 @@
    <string>PDF Manager</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(58, 58, 58);</string>
+   <string notr="true">background-color: qlineargradient(spread:repeat, x1:0.456, y1:0.365, x2:0.596, y2:0.465, stop:0.998342 rgba(23, 23, 23, 255), stop:1 rgba(255, 255, 255, 255));</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -33,7 +33,7 @@
      <bool>true</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 85, 127, 0.5);</string>
+     <string notr="true">background-color: rgba(0, 85, 127, 0.7);</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;PDF Manager&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -52,7 +52,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 0.5);</string>
+     <string notr="true">background-color: rgba(0, 0, 0, 0.6);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>

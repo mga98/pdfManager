@@ -15,7 +15,7 @@ class Ui_designJuntar(object):
     def setupUi(self, designJuntar):
         designJuntar.setObjectName("designJuntar")
         designJuntar.resize(541, 361)
-        designJuntar.setStyleSheet("background-color: rgb(58, 58, 58);")
+        designJuntar.setStyleSheet("background-color: qlineargradient(spread:repeat, x1:0.456, y1:0.365, x2:0.596, y2:0.465, stop:0.998342 rgba(23, 23, 23, 255), stop:1 rgba(255, 255, 255, 255));")
         self.btnJuntar = QtWidgets.QPushButton(designJuntar)
         self.btnJuntar.setGeometry(QtCore.QRect(400, 320, 131, 31))
         font = QtGui.QFont()
@@ -25,18 +25,18 @@ class Ui_designJuntar(object):
         font.setWeight(50)
         self.btnJuntar.setFont(font)
         self.btnJuntar.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.btnJuntar.setStyleSheet("background-color: rgba(255, 0, 0, 0.7);\n"
-"color: rgb(255, 255, 255);\n"
-"")
+        self.btnJuntar.setStyleSheet("background-color: rgba(255, 0, 0, 0.6);\n"
+"color: rgb(255, 255, 255);")
         self.btnJuntar.setObjectName("btnJuntar")
         self.listDir = QtWidgets.QListWidget(designJuntar)
         self.listDir.setGeometry(QtCore.QRect(10, 80, 381, 231))
-        self.listDir.setStyleSheet("background-color: rgba(0, 0, 0, 0.5);\n"
+        self.listDir.setStyleSheet("background-color: rgb(0, 0, 0);\n"
 "color: rgb(255, 255, 255);")
         self.listDir.setObjectName("listDir")
         self.label_2 = QtWidgets.QLabel(designJuntar)
-        self.label_2.setGeometry(QtCore.QRect(20, 320, 371, 31))
-        self.label_2.setStyleSheet("color: rgb(255, 255, 255);\n"
+        self.label_2.setGeometry(QtCore.QRect(10, 320, 381, 31))
+        self.label_2.setStyleSheet("background-color: rgb(0, 0, 0);\n"
+"color: rgb(255, 255, 255);\n"
 "font: 75 10pt \"MS Shell Dlg 2\";")
         self.label_2.setText("")
         self.label_2.setObjectName("label_2")
@@ -46,13 +46,13 @@ class Ui_designJuntar(object):
         font.setPointSize(9)
         self.btnClear.setFont(font)
         self.btnClear.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.btnClear.setStyleSheet("background-color: rgba(255, 0, 0, 0.7);\n"
+        self.btnClear.setStyleSheet("background-color: rgba(255, 0, 0, 0.6);\n"
 "color: rgb(255, 255, 255);")
         self.btnClear.setObjectName("btnClear")
         self.label = QtWidgets.QLabel(designJuntar)
         self.label.setGeometry(QtCore.QRect(0, 0, 541, 71))
         self.label.setMouseTracking(True)
-        self.label.setStyleSheet("background-color: rgba(255, 0, 0, 0.7);")
+        self.label.setStyleSheet("background-color: rgba(255, 0, 0, 0.6);")
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         self.btnArquivo = QtWidgets.QPushButton(designJuntar)
@@ -66,7 +66,7 @@ class Ui_designJuntar(object):
         self.btnArquivo.setFont(font)
         self.btnArquivo.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btnArquivo.setMouseTracking(False)
-        self.btnArquivo.setStyleSheet("background-color: rgba(255, 0, 0, 0.7);\n"
+        self.btnArquivo.setStyleSheet("background-color: rgba(255, 0, 0, 0.6);\n"
 "color: rgb(255, 255, 255);")
         self.btnArquivo.setObjectName("btnArquivo")
         self.btnDel = QtWidgets.QPushButton(designJuntar)
@@ -78,7 +78,7 @@ class Ui_designJuntar(object):
         font.setWeight(50)
         self.btnDel.setFont(font)
         self.btnDel.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.btnDel.setStyleSheet("background-color: rgba(255, 0, 0, 0.7);\n"
+        self.btnDel.setStyleSheet("background-color: rgba(255, 0, 0, 0.6);\n"
 "color: rgb(255, 255, 255);")
         self.btnDel.setObjectName("btnDel")
 
@@ -87,7 +87,7 @@ class Ui_designJuntar(object):
 
     def retranslateUi(self, designJuntar):
         _translate = QtCore.QCoreApplication.translate
-        designJuntar.setWindowTitle(_translate("designJuntar", "Form"))
+        designJuntar.setWindowTitle(_translate("designJuntar", "JuntarPDF"))
         self.btnJuntar.setText(_translate("designJuntar", "Juntar"))
         self.btnClear.setText(_translate("designJuntar", "Limpar"))
         self.label.setText(_translate("designJuntar", "<html><head/><body><p><span style=\" font-size:16pt; color:#ffffff;\">JuntarPDF </span></p></body></html>"))
