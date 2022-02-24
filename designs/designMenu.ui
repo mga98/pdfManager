@@ -6,20 +6,33 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>541</width>
-    <height>277</height>
+    <width>540</width>
+    <height>273</height>
    </rect>
   </property>
-  <property name="cursor">
-   <cursorShape>ArrowCursor</cursorShape>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>PDF Manager</string>
   </property>
+  <property name="toolTip">
+   <string/>
+  </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qlineargradient(spread:repeat, x1:0.456, y1:0.365, x2:0.596, y2:0.465, stop:0.998342 rgba(23, 23, 23, 255), stop:1 rgba(255, 255, 255, 255));</string>
+   <string notr="true">background-image: url(:/bgmain/images/texturaBg.jpg);
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
@@ -29,11 +42,17 @@
       <height>71</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <stylestrategy>PreferAntialias</stylestrategy>
+     </font>
+    </property>
     <property name="mouseTracking">
      <bool>true</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 85, 127, 0.7);</string>
+     <string notr="true">background: transparent;
+background-color: rgba(0, 85, 127, 0.5);</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;PDF Manager&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -42,93 +61,96 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QFrame" name="frame">
+   <widget class="QPushButton" name="btnJuntarPdf">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>71</y>
-      <width>201</width>
-      <height>291</height>
+      <x>180</x>
+      <y>90</y>
+      <width>181</width>
+      <height>41</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <stylestrategy>PreferAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(0, 0, 0, 0.6);</string>
+     <string notr="true">background-color: rgba(255, 0, 0, 0.6);
+color: rgb(255, 255, 255);
+</string>
     </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
+    <property name="text">
+     <string>JuntarPDF</string>
     </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
+   </widget>
+   <widget class="QPushButton" name="btnImgToPdf">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>150</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
     </property>
-    <widget class="QPushButton" name="btnJuntarPdf">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>181</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 0, 0, 0.7);
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <stylestrategy>PreferAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(147, 6, 133, 0.6);
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>ImgToPDF</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnWordToPdf">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>210</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <stylestrategy>PreferAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(8, 12, 255, 0.6);
 color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="text">
-      <string>JuntarPDF</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btnImgToPdf">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>80</y>
-       <width>181</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgba(147, 6, 133, 0.7);
-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="text">
-      <string>ImgToPDF</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btnWordToPdf">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>140</y>
-       <width>181</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgba(8, 12, 255, 0.7);
-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="text">
-      <string>WordToPDF</string>
-     </property>
-    </widget>
+    </property>
+    <property name="text">
+     <string>WordToPDF</string>
+    </property>
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="BgMain.qrc"/>
+ </resources>
  <connections/>
 </ui>
