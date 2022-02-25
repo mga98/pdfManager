@@ -14,7 +14,7 @@ class MenuWindow(QMainWindow, Ui_designMenu):
         ### Botões da interface ###
         self.btnJuntarPdf.clicked.connect(self.juntarPdf)
         self.btnImgToPdf.clicked.connect(self.converterPdf)
-        # self.btnWordToPdf.clicked.connect(self.pdfToWord)
+        self.btnWordToPdf.clicked.connect(self.pdfToWord)
 
     ### Abre a janela para juntar arquivos PDF's ###
     def juntarPdf(self):
@@ -26,6 +26,7 @@ class MenuWindow(QMainWindow, Ui_designMenu):
         self.converter = ConverterWindow()
         self.converter.show()
 
+    ### Abre a janela para transformar PDF's em arquivos .docx ###
     def pdfToWord(self):
         self.word = WordWindow()
         self.word.show()
