@@ -27,6 +27,7 @@
    </property>
    <property name="font">
     <font>
+     <family>Segoe UI Historic</family>
      <pointsize>9</pointsize>
      <stylestrategy>PreferAntialias</stylestrategy>
     </font>
@@ -59,6 +60,7 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="font">
     <font>
+     <family>Segoe UI Historic</family>
      <stylestrategy>PreferAntialias</stylestrategy>
     </font>
    </property>
@@ -84,6 +86,7 @@ background-color: rgba(147, 6, 133, 0.5);</string>
    </property>
    <property name="font">
     <font>
+     <family>Segoe UI Historic</family>
      <pointsize>9</pointsize>
      <weight>50</weight>
      <italic>false</italic>
@@ -115,6 +118,7 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="font">
     <font>
+     <family>Segoe UI Historic</family>
      <pointsize>9</pointsize>
      <stylestrategy>PreferAntialias</stylestrategy>
     </font>
@@ -169,6 +173,7 @@ font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
    </property>
    <property name="font">
     <font>
+     <family>Segoe UI Historic</family>
      <pointsize>9</pointsize>
      <stylestrategy>PreferAntialias</stylestrategy>
     </font>

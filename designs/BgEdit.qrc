@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="bgedit">
+    <file>images/texturaBg.jpg</file>
+  </qresource>
+</RCC>

@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>designWord</class>
- <widget class="QWidget" name="designWord">
+ <class>desingPageDel</class>
+ <widget class="QWidget" name="desingPageDel">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>541</width>
-    <height>228</height>
+    <height>269</height>
    </rect>
   </property>
-  <property name="font">
-   <font>
-    <family>Segoe UI Historic</family>
-   </font>
-  </property>
   <property name="windowTitle">
-   <string>WordToPDF</string>
+   <string>PageDelPDF</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/bgword/images/texturaBg.jpg);</string>
+   <string notr="true">background-color: rgb(0, 0, 0);
+background-image: url(:/bgedit/images/texturaBg.jpg);</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -33,15 +29,16 @@
    <property name="font">
     <font>
      <family>Segoe UI Historic</family>
+     <pointsize>16</pointsize>
      <stylestrategy>PreferAntialias</stylestrategy>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background: transparent;
-background-color: rgba(8, 12, 255, 0.5);</string>
+background-color: rgba(71, 238, 0, 0.5);</string>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;WordToPDF&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;PageDelPDF&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -73,7 +70,7 @@ background-color: rgba(8, 12, 255, 0.5);</string>
     <string extracomment=" "/>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(8, 12, 255, 0.5);
+    <string notr="true">background-color: rgba(71, 238, 0, 0.5);
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
@@ -84,7 +81,7 @@ color: rgb(255, 255, 255);</string>
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>120</y>
+     <y>160</y>
      <width>131</width>
      <height>31</height>
     </rect>
@@ -93,6 +90,8 @@ color: rgb(255, 255, 255);</string>
     <font>
      <family>Segoe UI Historic</family>
      <pointsize>9</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
      <stylestrategy>PreferAntialias</stylestrategy>
     </font>
    </property>
@@ -100,18 +99,18 @@ color: rgb(255, 255, 255);</string>
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(8, 12, 255, 0.5);
+    <string notr="true">background-color: rgba(71, 238, 0, 0.5);
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
     <string>Limpar</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btnConverter">
+  <widget class="QPushButton" name="btnDelPage">
    <property name="geometry">
     <rect>
      <x>400</x>
-     <y>180</y>
+     <y>220</y>
      <width>131</width>
      <height>31</height>
     </rect>
@@ -120,6 +119,11 @@ color: rgb(255, 255, 255);</string>
     <font>
      <family>Segoe UI Historic</family>
      <pointsize>9</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
      <stylestrategy>PreferAntialias</stylestrategy>
     </font>
    </property>
@@ -127,11 +131,11 @@ color: rgb(255, 255, 255);</string>
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgba(8, 12, 255, 0.5);
+    <string notr="true">background-color: rgba(71, 238, 0, 0.5);
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
-    <string>Converter</string>
+    <string>Deletar página</string>
    </property>
   </widget>
   <widget class="QListWidget" name="listArquivos">
@@ -140,7 +144,7 @@ color: rgb(255, 255, 255);</string>
      <x>10</x>
      <y>80</y>
      <width>381</width>
-     <height>71</height>
+     <height>111</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -153,7 +157,7 @@ color: rgb(255, 255, 255);</string>
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>180</y>
+     <y>220</y>
      <width>381</width>
      <height>31</height>
     </rect>
@@ -177,9 +181,28 @@ font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
     <string/>
    </property>
   </widget>
+  <widget class="QLineEdit" name="inputPageNum">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>120</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>Numero da página</string>
+   </property>
+  </widget>
  </widget>
  <resources>
-  <include location="BgWord.qrc"/>
+  <include location="BgEdit.qrc"/>
  </resources>
  <connections/>
 </ui>

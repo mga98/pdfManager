@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>540</width>
-    <height>273</height>
+    <width>541</width>
+    <height>330</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -44,6 +44,7 @@
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI Historic</family>
       <stylestrategy>PreferAntialias</stylestrategy>
      </font>
     </property>
@@ -78,6 +79,7 @@ background-color: rgba(0, 85, 127, 0.5);</string>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI Historic</family>
       <pointsize>10</pointsize>
       <stylestrategy>PreferAntialias</stylestrategy>
      </font>
@@ -105,6 +107,7 @@ color: rgb(255, 255, 255);
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI Historic</family>
       <pointsize>10</pointsize>
       <stylestrategy>PreferAntialias</stylestrategy>
      </font>
@@ -132,6 +135,7 @@ color: rgb(255, 255, 255);
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI Historic</family>
       <pointsize>10</pointsize>
       <stylestrategy>PreferAntialias</stylestrategy>
      </font>
@@ -145,6 +149,38 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>WordToPDF</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnPageDelPdf">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>270</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Historic</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+      <stylestrategy>PreferAntialias</stylestrategy>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(71, 238, 0, 0.5);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>PageDelPDF</string>
     </property>
    </widget>
   </widget>

@@ -19,6 +19,7 @@ class Ui_designConverter(object):
         self.btnArquivo = QtWidgets.QPushButton(designConverter)
         self.btnArquivo.setGeometry(QtCore.QRect(400, 80, 131, 31))
         font = QtGui.QFont()
+        font.setFamily("Segoe UI Historic")
         font.setPointSize(9)
         font.setStyleStrategy(QtGui.QFont.PreferAntialias)
         self.btnArquivo.setFont(font)
@@ -31,6 +32,7 @@ class Ui_designConverter(object):
         self.label = QtWidgets.QLabel(designConverter)
         self.label.setGeometry(QtCore.QRect(0, 0, 541, 71))
         font = QtGui.QFont()
+        font.setFamily("Segoe UI Historic")
         font.setStyleStrategy(QtGui.QFont.PreferAntialias)
         self.label.setFont(font)
         self.label.setStyleSheet("background: transparent;\n"
@@ -40,6 +42,7 @@ class Ui_designConverter(object):
         self.btnConverter = QtWidgets.QPushButton(designConverter)
         self.btnConverter.setGeometry(QtCore.QRect(400, 320, 131, 31))
         font = QtGui.QFont()
+        font.setFamily("Segoe UI Historic")
         font.setPointSize(9)
         font.setBold(False)
         font.setItalic(False)
@@ -55,6 +58,7 @@ class Ui_designConverter(object):
         self.btnClear = QtWidgets.QPushButton(designConverter)
         self.btnClear.setGeometry(QtCore.QRect(400, 180, 131, 31))
         font = QtGui.QFont()
+        font.setFamily("Segoe UI Historic")
         font.setPointSize(9)
         font.setStyleStrategy(QtGui.QFont.PreferAntialias)
         self.btnClear.setFont(font)
@@ -80,6 +84,7 @@ class Ui_designConverter(object):
         self.btnDeletar = QtWidgets.QPushButton(designConverter)
         self.btnDeletar.setGeometry(QtCore.QRect(400, 130, 131, 31))
         font = QtGui.QFont()
+        font.setFamily("Segoe UI Historic")
         font.setPointSize(9)
         font.setStyleStrategy(QtGui.QFont.PreferAntialias)
         self.btnDeletar.setFont(font)
@@ -105,4 +110,5 @@ class Ui_designConverter(object):
         self.btnConverter.setText(_translate("designConverter", "Converter"))
         self.btnClear.setText(_translate("designConverter", "Limpar"))
         self.btnDeletar.setText(_translate("designConverter", "Deletar"))
+
 from . import BgConverter
