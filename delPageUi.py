@@ -13,24 +13,37 @@ class delPageWindow(QMainWindow, Ui_desingPageDel):
         ### Lista de diretórios ###
         self.dir = ''
 
-    ### Botões da interface ###
+        ### Botões da interface ###
+        self.btnArquivo.clicked.connect(self.openFile)
+        self.btnClear.clicked.connect(self.clearList)
+        self.btnDelPage.clicked.connect(self.delPage)
 
     ### Abrir o arquivo PDF ###
     def openFile(self):
         Tk().withdraw()
         path = askopenfilename()
-        self.dir = str(path)
+
+        self.dir = path
+        self.listArquivos.takeItem(0)
+        self.listArquivos.addItem(path)
 
     ### Limpar o diretório da lista de PDF's ###
     def clearList(self):
-        self.dir.clear()
-    
+        self.dir = ''
+        self.listArquivos.clear()
+        self.inputPageNum.setText('')
+        self.label_2.setText('')
+
     ### Editar o arquivo PDF selecionado ###
-    def editPdf(self):
-        pdfFileObj = open(self.dir)
-        pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
+    def delPage(self):
+        try:
+            pdfFileObj = open(self.dir)
+            pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
 
-        for pageNum in range(pdfReader.numPages):
-            pageObj = pdfReader.getPage(pageNum)
-            # Continua a partir daqui...
+            for pageNum in range(pdfReader.numPages):
+                pageObj = pdfReader.getPage(pageNum)
+                # Continua a partir daqui...
+                pass
 
+        except Exception as e:
+            self.label_2.setText('Erro! Verifique os diretórios dos PDFs.')      

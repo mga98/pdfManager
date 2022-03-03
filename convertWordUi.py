@@ -31,6 +31,7 @@ class WordWindow(QMainWindow, Ui_designWord):
         path = askopenfilename()
         
         self.dir = path
+        self.listArquivos.takeItem(0)
         self.listArquivos.addItem(str(path))
 
     def clearList(self):
