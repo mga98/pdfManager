@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="bgword">
+    <file>images/textureBg11.png</file>
     <file>images/texturaBg.jpg</file>
   </qresource>
 </RCC>

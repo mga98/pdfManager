@@ -19,7 +19,7 @@
    <string>WordToPDF</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/bgword/images/texturaBg.jpg);</string>
+   <string notr="true">background-image: url(:/bgword/images/textureBg11.png);</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">

@@ -15,7 +15,7 @@ class Ui_designConverter(object):
     def setupUi(self, designConverter):
         designConverter.setObjectName("designConverter")
         designConverter.resize(541, 361)
-        designConverter.setStyleSheet("background-image: url(:/bgconverter/images/texturaBg.jpg);")
+        designConverter.setStyleSheet("background-image: url(:/bgconverter/images/textureBg11.png);")
         self.btnArquivo = QtWidgets.QPushButton(designConverter)
         self.btnArquivo.setGeometry(QtCore.QRect(400, 80, 131, 31))
         font = QtGui.QFont()
@@ -110,5 +110,4 @@ class Ui_designConverter(object):
         self.btnConverter.setText(_translate("designConverter", "Converter"))
         self.btnClear.setText(_translate("designConverter", "Limpar"))
         self.btnDeletar.setText(_translate("designConverter", "Deletar"))
-
 from . import BgConverter

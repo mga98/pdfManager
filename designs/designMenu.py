@@ -21,7 +21,7 @@ class Ui_designMenu(object):
         sizePolicy.setHeightForWidth(designMenu.sizePolicy().hasHeightForWidth())
         designMenu.setSizePolicy(sizePolicy)
         designMenu.setToolTip("")
-        designMenu.setStyleSheet("background-image: url(:/bgmain/images/texturaBg.jpg);\n"
+        designMenu.setStyleSheet("background-image: url(:/bgmain/images/textureBg11.png);\n"
 "")
         self.centralwidget = QtWidgets.QWidget(designMenu)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
@@ -38,7 +38,7 @@ class Ui_designMenu(object):
         self.label.setFont(font)
         self.label.setMouseTracking(True)
         self.label.setStyleSheet("background: transparent;\n"
-"background-color: rgba(0, 85, 127, 0.5);")
+"background-color: rgba(255, 85, 0, 0.7);")
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         self.btnJuntarPdf = QtWidgets.QPushButton(self.centralwidget)

@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="bgmain">
     <file>images/texturaBg.jpg</file>
+    <file>images/textureBg11.png</file>
   </qresource>
 </RCC>

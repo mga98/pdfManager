@@ -18,7 +18,7 @@ class Ui_designWord(object):
         font = QtGui.QFont()
         font.setFamily("Segoe UI Historic")
         designWord.setFont(font)
-        designWord.setStyleSheet("background-image: url(:/bgword/images/texturaBg.jpg);")
+        designWord.setStyleSheet("background-image: url(:/bgword/images/textureBg11.png);")
         self.label = QtWidgets.QLabel(designWord)
         self.label.setGeometry(QtCore.QRect(0, 0, 541, 71))
         font = QtGui.QFont()

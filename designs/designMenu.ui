@@ -23,7 +23,7 @@
    <string/>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/bgmain/images/texturaBg.jpg);
+   <string notr="true">background-image: url(:/bgmain/images/textureBg11.png);
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -53,7 +53,7 @@
     </property>
     <property name="styleSheet">
      <string notr="true">background: transparent;
-background-color: rgba(0, 85, 127, 0.5);</string>
+background-color: rgba(255, 85, 0, 0.7);</string>
     </property>
     <property name="text">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;PDF Manager&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>

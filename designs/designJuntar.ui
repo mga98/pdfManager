@@ -14,7 +14,7 @@
    <string>JuntarPDF</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/bgjuntar/images/texturaBg.jpg);</string>
+   <string notr="true">background-image: url(:/bgjuntar/images/textureBg11.png);</string>
   </property>
   <widget class="QPushButton" name="btnJuntar">
    <property name="geometry">

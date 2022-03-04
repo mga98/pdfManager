@@ -14,7 +14,7 @@
    <string>ImgToPDF</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/bgconverter/images/texturaBg.jpg);</string>
+   <string notr="true">background-image: url(:/bgconverter/images/textureBg11.png);</string>
   </property>
   <widget class="QPushButton" name="btnArquivo">
    <property name="geometry">

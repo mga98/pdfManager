@@ -16,7 +16,7 @@ class Ui_desingPageDel(object):
         desingPageDel.setObjectName("desingPageDel")
         desingPageDel.resize(541, 269)
         desingPageDel.setStyleSheet("background-color: rgb(0, 0, 0);\n"
-"background-image: url(:/bgedit/images/texturaBg.jpg);")
+"background-image: url(:/bgedit/images/textureBg11.png);")
         self.label = QtWidgets.QLabel(desingPageDel)
         self.label.setGeometry(QtCore.QRect(0, 0, 541, 71))
         font = QtGui.QFont()

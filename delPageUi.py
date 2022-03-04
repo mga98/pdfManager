@@ -37,13 +37,24 @@ class delPageWindow(QMainWindow, Ui_desingPageDel):
     ### Editar o arquivo PDF selecionado ###
     def delPage(self):
         try:
-            pdfFileObj = open(self.dir)
+            pdfFileObj = open(fr'{self.dir}', 'rb')
             pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
+            pdfWriter = PyPDF2.PdfFileWriter()
+
+            pageToDelete = int(self.inputPageNum.text())
 
             for pageNum in range(pdfReader.numPages):
-                pageObj = pdfReader.getPage(pageNum)
-                # Continua a partir daqui...
-                pass
+                if pageNum != pageToDelete - 1:
+                    pageObj = pdfReader.getPage(pageNum)
+                    pdfWriter.addPage(pageObj)
+                
+            save = asksaveasfilename(defaultextension='.pdf')
+            pdfOutput = open(save, 'wb')
+            pdfWriter.write(pdfOutput)
+            pdfOutput.close()
+
+            self.label_2.setText('Página deletada com súcesso!')
 
         except Exception as e:
-            self.label_2.setText('Erro! Verifique os diretórios dos PDFs.')      
+            self.label_2.setText('Erro! Verifique os diretórios dos PDFs.')
+            

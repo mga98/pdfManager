@@ -15,7 +15,7 @@ class Ui_designJuntar(object):
     def setupUi(self, designJuntar):
         designJuntar.setObjectName("designJuntar")
         designJuntar.resize(541, 361)
-        designJuntar.setStyleSheet("background-image: url(:/bgjuntar/images/texturaBg.jpg);")
+        designJuntar.setStyleSheet("background-image: url(:/bgjuntar/images/textureBg11.png);")
         self.btnJuntar = QtWidgets.QPushButton(designJuntar)
         self.btnJuntar.setGeometry(QtCore.QRect(400, 320, 131, 31))
         font = QtGui.QFont()
