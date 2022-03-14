@@ -1,3 +1,4 @@
+from __future__ import annotations
 from PyQt5.QtWidgets import QMainWindow, QApplication
 from tkinter.filedialog import askopenfilename, asksaveasfilename
 from designs.designDelPage import *
@@ -42,12 +43,20 @@ class delPageWindow(QMainWindow, Ui_desingPageDel):
             pdfWriter = PyPDF2.PdfFileWriter()
 
             pageToDelete = int(self.inputPageNum.text())
+            filePages = []
 
             for pageNum in range(pdfReader.numPages):
+                filePages.append(pageNum)
+
                 if pageNum != pageToDelete - 1:
                     pageObj = pdfReader.getPage(pageNum)
                     pdfWriter.addPage(pageObj)
-                
+
+            # Verifica se a página existe no arquivo.
+            if pageToDelete not in filePages:
+                self.label_2.setText('Página não encontrada.')
+                return
+
             save = asksaveasfilename(defaultextension='.pdf')
             pdfOutput = open(save, 'wb')
             pdfWriter.write(pdfOutput)
@@ -57,4 +66,3 @@ class delPageWindow(QMainWindow, Ui_desingPageDel):
 
         except Exception as e:
             self.label_2.setText('Erro! Verifique os diretórios dos PDFs.')
-            
